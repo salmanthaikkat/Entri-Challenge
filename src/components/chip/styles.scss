@@ -1,0 +1,21 @@
+@import "../../styles/_colors";
+
+.select-chip {
+  border: 3px solid $primaryGrey;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 30px;
+  margin: 5px;
+  cursor: pointer;
+  color: $primaryGrey;
+
+  &--selected {
+    background-color: $primaryGrey;
+    color: $primaryWhite;
+  }
+
+  &__label {
+    font-weight: 600;
+    font-size: 16px;
+  }
+}

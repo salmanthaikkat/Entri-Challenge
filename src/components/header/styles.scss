@@ -1,0 +1,24 @@
+@import "../../styles/_colors";
+
+.header {
+  &__title {
+    font-weight: 600;
+    font-size: 64px;
+    color: $primaryBlack;
+  }
+
+  &__sub-title {
+    font-weight: 600;
+    color: $primaryGrey;
+    font-size: 36px;
+  }
+
+  &__tool {
+    margin: 30px 5px;
+    display: flex;
+
+    &-chip {
+      display: flex;
+    }
+  }
+}

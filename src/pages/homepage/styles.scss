@@ -1,0 +1,16 @@
+@import "../../styles/_fonts";
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .main-container {
+    width: calc(100% - 480px);
+  }
+
+  .side-container {
+    width: 400px;
+    background-color: aqua;
+  }
+}
