@@ -1,6 +1,7 @@
 @import "../../styles/_colors";
 
 .header {
+  padding: 0 40px;
   &__title {
     font-weight: 600;
     font-size: 64px;
@@ -16,9 +17,11 @@
   &__tool {
     margin: 30px 5px;
     display: flex;
+    flex-wrap: wrap;
 
     &-chip {
       display: flex;
+      flex-wrap: wrap;
     }
   }
 }

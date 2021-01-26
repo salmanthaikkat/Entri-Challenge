@@ -1,5 +1,10 @@
 export const CHIP_SELECT = [
   {
+    id: 4,
+    label: "Technology",
+    key: "technology",
+  },
+  {
     id: 1,
     label: "General",
     key: "general",
@@ -13,11 +18,6 @@ export const CHIP_SELECT = [
     id: 3,
     label: "Sports",
     key: "sports",
-  },
-  {
-    id: 4,
-    label: "Technology",
-    key: "technology",
   },
   {
     id: 5,

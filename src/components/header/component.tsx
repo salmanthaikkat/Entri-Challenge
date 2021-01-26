@@ -1,11 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { fetchNews } from "../../redux/news/action";
 import SelectChip from "../chip";
 import CustomInput from "../customInput";
 import { CHIP_SELECT } from "./constants";
 
 const Header = () => {
   const [searchText, setSearchText] = useState<string>("");
-  const [category, setCategory] = useState<string>("general");
+  const [category, setCategory] = useState<string>("technology");
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    setTimeout(() => {
+      dispatch(fetchNews(category, searchText, 1, false));
+    }, 500);
+  }, [category, searchText]);
 
   const handleSearchInputChange = (e: any) => {
     setSearchText(e.target.value);
@@ -16,7 +25,7 @@ const Header = () => {
   };
 
   return (
-    <React.Fragment>
+    <div className="header">
       <div className="header__title">Latest News</div>
       <div className="header__sub-title">Your insights to keep you afloat</div>
       <div className="header__tool">
@@ -38,7 +47,7 @@ const Header = () => {
           ))}
         </div>
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 

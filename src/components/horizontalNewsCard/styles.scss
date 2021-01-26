@@ -1,0 +1,54 @@
+@import "../../styles/_colors";
+
+.horizontal-card-container {
+  display: flex;
+  margin: 20px 0;
+  flex-basis: 50%;
+
+  &__image {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 220px;
+      height: 160px;
+      border-radius: 20px;
+    }
+  }
+
+  &__content {
+    margin-left: 10px;
+    min-width: 0;
+
+    &-title {
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    &-description {
+      color: $primaryGrey;
+      margin: 13px 0;
+      max-height: 30px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    &-author,
+    &-date {
+      font-size: 16px;
+      font-weight: 600;
+      color: $primaryGrey;
+      display: flex;
+      align-items: center;
+
+      span {
+        height: 5px;
+        width: 5px;
+        border-radius: 16px;
+        background-color: $primaryGrey;
+        margin: 0px 8px;
+      }
+    }
+  }
+}
