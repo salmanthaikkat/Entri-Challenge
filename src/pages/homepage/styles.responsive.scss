@@ -1,0 +1,14 @@
+@import "../../styles/_width";
+
+@media (max-width: 1365px) {
+  .main {
+    padding: 50px 70px;
+  }
+}
+
+@media (max-width: $laptop) {
+  .main {
+    width: 100%;
+    padding: 50px 50px;
+  }
+}

@@ -1,0 +1,23 @@
+@media (max-width: 945px) {
+  .main-container {
+    &__main {
+      &-row {
+        flex-direction: column;
+
+        &__left {
+          margin: unset;
+          margin-bottom: 20px;
+        }
+
+        &__left,
+        &__right {
+          width: 100%;
+        }
+      }
+
+      .main-container__data-row {
+        padding: unset;
+      }
+    }
+  }
+}

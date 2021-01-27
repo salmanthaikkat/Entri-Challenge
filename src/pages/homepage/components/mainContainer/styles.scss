@@ -1,8 +1,6 @@
 @import "../../../../styles/_colors";
 
 .main-container {
-  padding: 60px 40px;
-
   &__main {
     &-row {
       display: flex;
@@ -10,11 +8,25 @@
 
       &__left {
         width: 45%;
-        margin: 20px 45px;
+        margin: 20px 45px 20px 35px;
       }
 
       &__right {
         width: 45%;
+      }
+    }
+
+    .data-loader {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      span {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        font-size: 20px;
+        color: $primaryGrey;
       }
     }
   }
@@ -24,6 +36,12 @@
       display: flex;
       padding: 45px;
       flex-direction: column;
+
+      .infinite-scroll-component__outerdiv {
+        .infinite-scroll-component {
+          overflow: hidden !important;
+        }
+      }
     }
   }
 }

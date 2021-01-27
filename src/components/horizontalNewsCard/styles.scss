@@ -3,11 +3,12 @@
 .horizontal-card-container {
   display: flex;
   margin: 20px 0;
-  flex-basis: 50%;
+  overflow: hidden;
 
   &__image {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    margin-right: 15px;
 
     img {
       width: 220px;

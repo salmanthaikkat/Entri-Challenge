@@ -2,7 +2,8 @@
 
 .vertical-card-container {
   &__image {
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 350px;
     width: 100%;
     background-position: center;

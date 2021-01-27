@@ -1,0 +1,17 @@
+@media (max-width: 969px) {
+  .header {
+    &__tool {
+      justify-content: center;
+
+      &-chip {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 945px) {
+  .header {
+    padding: unset;
+  }
+}
