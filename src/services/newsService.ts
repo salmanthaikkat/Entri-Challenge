@@ -1,8 +1,7 @@
 import axios, { AxiosRequestConfig } from "axios";
-const proxyUrl = "https://cors-anywhere.herokuapp.com/";
 
 export const client = axios.create({
-  baseURL: `${proxyUrl}${process.env.REACT_APP_NEWS_API_URL}`,
+  baseURL: process.env.REACT_APP_NEWS_API_URL,
   timeout: 30000,
   headers: {
     "Content-Type": "application/json",

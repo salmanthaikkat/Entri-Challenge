@@ -1,0 +1,11 @@
+@media (max-width: 425px) {
+  .horizontal-card-container {
+    flex-direction: column;
+
+    &__image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
